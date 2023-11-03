@@ -31,13 +31,13 @@ real authentication. First of all we need to create a boolean flag to handle the
 
 ## Getting Started
 
-    Clone the repository and run the app.
+Clone the repository and run the app.
 
 ## App use instructions
 
-    When the app starts the first thing that it does is verify the user state, if the user is authenticated already the screen shown will be the characters list, otherwise the login screen will be displayed.
+When the app starts the first thing that it does is verify the user state, if the user is authenticated already the screen shown will be the characters list, otherwise the login screen will be displayed.
 
-    For the login screen there are two inputs with basic validations along a login button which validate the inputs.
+For the login screen there are two inputs with basic validations along a login button which validate the inputs.
 
 <table>
   <tr>
