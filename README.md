@@ -37,7 +37,8 @@ Clone the repository and run the app.
 
 When the app starts the first thing that it does is verify the user state, if the user is authenticated already the screen shown will be the characters list, otherwise the login screen will be displayed.
 
-For the login screen there are two inputs with basic validations along a login button which validate the inputs.
+For the login screen there are two inputs with basic validations along a login button which validate the inputs. The inputs fields will accept any text while them accomplish the validations, and then when the login button is pressed it
+will navigate to the characters screen.
 
 <table>
   <tr>
@@ -46,6 +47,13 @@ For the login screen there are two inputs with basic validations along a login b
   </tr>
 </table>
 
+
+The characters screen initialize with a loading indicator due a the http request, if it is success will show
+the character list, otherwise a centered error message will be show on the screen. The screen has a logout button
+in the upper-right corner where if the user press it the user will be redirected to the login screen. lastly
+if a list's item is pressed the user will navigate to the characters detail screen.
+
+![Characters list](assets/img/list_char.jpg)
 
 when you press the login button it calls
 the event "Login" which call the function from the repository to save the boolean flag in true and then the
