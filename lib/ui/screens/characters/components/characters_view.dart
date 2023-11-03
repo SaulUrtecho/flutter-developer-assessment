@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:thrones_app/ui/blocs/authentication/authentication_bloc.dart';
-import 'package:thrones_app/ui/screens/characters/bloc/fetch_characters_bloc.dart';
+import 'package:thrones_app/ui/screens/characters/bloc/characters_bloc.dart';
 import 'package:thrones_app/ui/screens/characters/components/character_card.dart';
 
 class CharactersView extends StatelessWidget {
@@ -19,7 +19,7 @@ class CharactersView extends StatelessWidget {
           ),
         ],
       ),
-      body: BlocBuilder<FetchCharactersBloc, FetchCharactersState>(
+      body: BlocBuilder<CharactersBloc, CharactersState>(
         builder: (context, state) {
           switch (state.appStatus) {
             case AppStatus.loading:

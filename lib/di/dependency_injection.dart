@@ -9,7 +9,7 @@ import 'package:thrones_app/domain/repositories/authentication/authentication_re
 import 'package:thrones_app/domain/repositories/characters/characters_repository_contract.dart';
 import 'package:thrones_app/domain/use_cases/get_characters_use_case.dart';
 import 'package:thrones_app/ui/blocs/authentication/authentication_bloc.dart';
-import 'package:thrones_app/ui/screens/characters/bloc/fetch_characters_bloc.dart';
+import 'package:thrones_app/ui/screens/characters/bloc/characters_bloc.dart';
 
 final getIt = GetIt.instance;
 
@@ -31,6 +31,6 @@ Future<void> setupDependencies() async {
   getIt.registerFactory<GetCharactersUseCase>(() => GetCharactersUseCase(getIt<CharactersRepositoryContract>()));
 
   // Blocs
-  getIt.registerFactory<FetchCharactersBloc>(() => FetchCharactersBloc(getIt<GetCharactersUseCase>()));
+  getIt.registerFactory<CharactersBloc>(() => CharactersBloc(getIt<GetCharactersUseCase>()));
   getIt.registerFactory<AuthenticationBloc>(() => AuthenticationBloc(getIt<AuthenticationRepositoryContract>()));
 }
