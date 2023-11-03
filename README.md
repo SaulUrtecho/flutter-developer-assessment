@@ -11,6 +11,7 @@ because in my opinion doing it on this way you can ensure that you project would
 The architecture chosen was CLEAN ARCHITECTURE due it divide our project in different layers. These
 layers are called DATA, DOMAIN, PRESENTATION. In each one of them there are sublayers DATA[datasources, models, repositories], DOMAIN[usecases, entities, repositories], PRESENTATION[state management, widgets].
 
+![Clean Architecture Diagram](assets/img/Clean_Architecture.jpeg)
 
 - State Management:
 - Authentication with local persistency:
