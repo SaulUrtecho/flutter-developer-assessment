@@ -16,8 +16,8 @@ layers are called DATA, DOMAIN, PRESENTATION. In each one of them there are subl
 - State Management: The state management used was BLoC (Business Logic Component) because it is too friendly with
 the chosen architecture as well as it helps us separate the logic from UI. In the project I created two blocs:
 
-- AuthenticationBloc: This bloc contains all the logic about the user's session, for example, this bloc simulate an API login using your name and password.
-- CharactersBloc: This bloc was created to get all the characters from API and handle the list state changes.
+     AuthenticationBloc: This bloc contains all the logic about the user's session, for example, this bloc simulate an API login using your name and password.
+     CharactersBloc: This bloc was created to get all the characters from API and handle the list state changes.
 
 - Authentication with local persistency: I used local persistency through shared preferences to simulate a
 real authentication. First of all we need to create a boolean flag to handle the simulation,
