@@ -15,5 +15,14 @@ ThemeData appTheme() {
         surface: Colors.black,
         onSurface: Colors.yellow,
       ),
-      textTheme: const TextTheme(labelLarge: TextStyle(fontSize: 20)));
+      textTheme: const TextTheme(labelLarge: TextStyle(fontSize: 20)),
+      inputDecorationTheme: InputDecorationTheme(
+          iconColor: Colors.white,
+          filled: true,
+          fillColor: Colors.black38,
+          contentPadding: const EdgeInsets.all(12.0),
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(8.0),
+            borderSide: BorderSide.none,
+          )));
 }

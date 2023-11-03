@@ -6,14 +6,14 @@ import 'package:thrones_app/core/failures.dart';
 import 'package:thrones_app/data/models/character_model.dart';
 import 'package:thrones_app/domain/entities/character_entity.dart';
 
-abstract class CharactersRemoteDataSource {
+abstract class CharactersDataSource {
   Future<Either<Failures, List<CharacterEntity>>> getCharacters();
 }
 
-class CharactersRemoteDataSourceImpl implements CharactersRemoteDataSource {
+class CharactersRemoteDataSource implements CharactersDataSource {
   final Client client;
 
-  CharactersRemoteDataSourceImpl(this.client);
+  CharactersRemoteDataSource(this.client);
   @override
   Future<Either<Failures, List<CharacterEntity>>> getCharacters() async {
     try {
