@@ -28,6 +28,8 @@ real authentication. First of all we need to create a boolean flag to handle the
 
 - Dependency Injection: GetIt was used because it is a comfortable, easy to use and scalable, this third part library allows create singletons and factories in a organized way.
 
+- Theming: The app has a customized theme at the Material level.
+
 
 ## Getting Started
 
