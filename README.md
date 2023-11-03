@@ -55,7 +55,8 @@ if a list's item is pressed the user will navigate to the characters detail scre
 
 <img src="assets/img/list_char.jpg" width="200" />
 
-when you press the login button it calls
-the event "Login" which call the function from the repository to save the boolean flag in true and then the
-state is changed to authenticated.
 
+The details screen show all the character information, this screen includes a back button.
+
+
+<img src="assets/img/details.jpg" width="200" />
