@@ -1,5 +1,6 @@
 import 'package:equatable/equatable.dart';
 
+// class made to handle errors
 abstract class Failures extends Equatable {
   const Failures();
 
@@ -7,5 +8,5 @@ abstract class Failures extends Equatable {
   List<Object?> get props => [];
 }
 
-// General failures
+// class for handle server errors
 class ServerFailure extends Failures {}

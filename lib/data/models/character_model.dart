@@ -1,3 +1,5 @@
+/*  This is the Character model where all the API properties are placed
+ and transform them in a CharacterModel */
 class CharacterModel {
   final int id;
   final String? firstName;

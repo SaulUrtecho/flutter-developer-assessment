@@ -5,6 +5,8 @@ import 'package:thrones_app/domain/repositories/authentication/authentication_re
 part 'authentication_event.dart';
 part 'authentication_state.dart';
 
+/*This is the Auth Bloc where the Auth repository is passed
+and the logic is made here, we emit new states based in the method's results */
 class AuthenticationBloc extends Bloc<AuthenticationEvent, AuthenticationState> {
   final AuthenticationRepositoryContract _authenticationRepository;
 

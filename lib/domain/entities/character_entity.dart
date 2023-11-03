@@ -1,6 +1,8 @@
 import 'package:equatable/equatable.dart';
 import 'package:thrones_app/data/models/character_model.dart';
 
+/*This Entity represent to our CharacterModel, but this last class
+must not leave the data layer, that's the reason we must create a Entity */
 class CharacterEntity extends Equatable {
   final int id;
   final String? firstName;

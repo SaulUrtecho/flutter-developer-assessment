@@ -9,6 +9,7 @@ class AuthenticationState extends Equatable {
   List<Object> get props => [authStatus];
 }
 
+// enum for validate the user's states
 enum AuthStatus {
   authenticated,
   unauthenticated,

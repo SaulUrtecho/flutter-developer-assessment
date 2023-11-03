@@ -6,10 +6,14 @@ import 'package:thrones_app/core/failures.dart';
 import 'package:thrones_app/data/models/character_model.dart';
 import 'package:thrones_app/domain/entities/character_entity.dart';
 
+// CharactersDataSource Contract
 abstract class CharactersDataSource {
   Future<Either<Failures, List<CharacterEntity>>> getCharacters();
 }
 
+/*With this class the data is received from the API,
+and then the data is validated and converted to a CharacterModel and
+then immediately to a CharacterEntity in order to use this type in the app */
 class CharactersRemoteDataSource implements CharactersDataSource {
   final Client client;
 

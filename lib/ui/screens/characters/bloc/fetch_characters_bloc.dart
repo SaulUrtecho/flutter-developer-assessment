@@ -6,6 +6,8 @@ import 'package:thrones_app/domain/use_cases/get_characters_use_case.dart';
 part 'fetch_characters_event.dart';
 part 'fetch_characters_state.dart';
 
+// This is the bloc for get all the characters and based
+// in the method's result the state is change through the copyWith
 class FetchCharactersBloc extends Bloc<FetchCharactersEvent, FetchCharactersState> {
   final GetCharactersUseCase _getCharactersUseCase;
   FetchCharactersBloc(this._getCharactersUseCase) : super(FetchCharactersState.initial()) {

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// Theme configuration used in the app
 ThemeData appTheme() {
   return ThemeData(
       colorScheme: const ColorScheme(
