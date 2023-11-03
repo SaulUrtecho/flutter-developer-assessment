@@ -53,7 +53,7 @@ the character list, otherwise a centered error message will be show on the scree
 in the upper-right corner where if the user press it the user will be redirected to the login screen. lastly
 if a list's item is pressed the user will navigate to the characters detail screen.
 
-![Characters list](assets/img/list_char.jpg)
+<img src="assets/img/list_char.jpg" width="200" />
 
 when you press the login button it calls
 the event "Login" which call the function from the repository to save the boolean flag in true and then the
