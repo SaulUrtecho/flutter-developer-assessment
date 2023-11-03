@@ -17,15 +17,34 @@ layers are called DATA, DOMAIN, PRESENTATION. In each one of them there are subl
 the chosen architecture as well as it helps us separate the logic from UI. In the project I created two blocs:
 
      AuthenticationBloc: This bloc contains all the logic about the user's session, for example, this bloc simulate an API login using your name and password.
+
      CharactersBloc: This bloc was created to get all the characters from API and handle the list state changes.
+
+- Error Handler: It was used the third part library called Either which use functional programming, it allow us to
+work with error objects instead working with exceptions.
 
 - Authentication with local persistency: I used local persistency through shared preferences to simulate a
 real authentication. First of all we need to create a boolean flag to handle the simulation,
 
-- Dependency Injection:
+- Dependency Injection: GetIt was used because it is a comfortable, easy to use and scalable, this third part library allows create singletons and factories in a organized way.
 
 
 ## Getting Started
+
+    Clone the repository and run the app.
+
+## App use instructions
+
+    When the app starts the first thing that it does is verify the user state, if the user is authenticated already the screen shown will be the characters list, otherwise the login screen will be displayed.
+
+    For the login screen there are two inputs with basic validations along a login button which validate the inputs.
+
+<table>
+  <tr>
+    <td><img src="assets/img/login.jpg" width="200" /></td>
+    <td><img src="assets/img/validations.jpg" width="200" /></td>
+  </tr>
+</table>
 
 
 when you press the login button it calls
