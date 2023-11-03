@@ -24,7 +24,7 @@ the chosen architecture as well as it helps us separate the logic from UI. In th
 work with error objects instead working with exceptions.
 
 - Authentication with local persistency: I used local persistency through shared preferences to simulate a
-real authentication. First of all we need to create a boolean flag to handle the simulation,
+real authentication.
 
 - Dependency Injection: GetIt was used because it is a comfortable, easy to use and scalable, this third part library allows create singletons and factories in a organized way.
 
