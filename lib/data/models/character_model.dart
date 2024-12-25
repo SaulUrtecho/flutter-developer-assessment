@@ -22,12 +22,12 @@ class CharacterModel {
   factory CharacterModel.fromJson(Map<String, dynamic> json) {
     return CharacterModel(
       id: json['id'],
-      firstName: json['firstName'],
-      lastName: json['lastName'],
-      title: json['title'],
-      family: json['family'],
-      image: json['image'],
-      imageUrl: json['imageUrl'],
+      firstName: json['firstName'] ?? '',
+      lastName: json['lastName'] ?? '',
+      title: json['title'] ?? '',
+      family: json['family'] ?? '',
+      image: json['image'] ?? '',
+      imageUrl: json['imageUrl'] ?? '',
     );
   }
 }
